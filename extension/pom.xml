@@ -4,7 +4,7 @@
   <parent>
     <artifactId>platform</artifactId>
     <groupId>org.exoplatform.platform</groupId>
-    <version>4.0.0.Alpha1-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>platform-extension</artifactId>
   <packaging>pom</packaging>
@@ -14,6 +14,6 @@
     <module>webapp</module>
     <module>resources</module>
     <module>portlets</module>
-    <module>ear</module>
+    <!--<module>ear</module>-->
   </modules>
 </project>

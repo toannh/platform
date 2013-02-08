@@ -4,7 +4,7 @@
   <parent>
     <artifactId>platform</artifactId>
     <groupId>org.exoplatform.platform</groupId>
-    <version>4.0.0.Alpha1-SNAPSHOT</version>
+    <version>4.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>platform-sample</artifactId>
   <packaging>pom</packaging>
@@ -13,7 +13,7 @@
     <module>acme-intranet</module>
     <module>default-website</module>
     <module>acme-website</module>
-    <module>blank</module>
+    <!--<module>blank</module>-->
     <module>gadgets-sample</module>
   </modules>
 </project>
