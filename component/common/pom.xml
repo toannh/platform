@@ -165,5 +165,28 @@
       <artifactId>slf4j-simple</artifactId>
       <scope>test</scope>
     </dependency>
+     <dependency>
+        <groupId>org.exoplatform.tool</groupId>
+        <artifactId>exo.tool.framework.junit</artifactId>
+        <scope>test</scope>
+     </dependency>
+     <dependency>
+        <groupId>org.hsqldb</groupId>
+        <artifactId>hsqldb</artifactId>
+        <scope>test</scope>
+     </dependency>
   </dependencies>
+   <build>
+      <testResources>
+         <!-- We filter resources in this module -->
+         <testResource>
+            <filtering>true</filtering>
+            <directory>src/test/resources</directory>
+            <includes>
+               <include>**/*.xml</include>
+               <include>**/*.properties</include>
+            </includes>
+         </testResource>
+      </testResources>
+   </build>
 </project>
