@@ -55,9 +55,12 @@
                <value>
                   <string>web</string>
                </value>
-               <value>
-                  <string>eXoResources</string>
-               </value>
+                <value>
+                    <string>eXoResources</string>
+                </value>
+                <value>
+                    <string>eXoSkin</string>
+                </value>
 
                <!-- commons -->
 

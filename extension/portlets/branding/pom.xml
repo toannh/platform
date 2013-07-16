@@ -99,6 +99,12 @@
       <type>war</type>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.exoplatform.platform-ui</groupId>
+      <artifactId>platform-ui-skin</artifactId>
+      <type>war</type>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
     <finalName>platform-branding</finalName>
@@ -154,7 +160,7 @@
               <artifactItems>
                 <artifactItem>
                   <groupId>org.exoplatform.platform-ui</groupId>
-                  <artifactId>platform-ui-web-eXoResources</artifactId>
+                  <artifactId>platform-ui-skin</artifactId>
                   <type>war</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>

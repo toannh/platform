@@ -19,6 +19,12 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
+      <groupId>org.exoplatform.platform-ui</groupId>
+      <artifactId>platform-ui-skin</artifactId>
+      <type>war</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>org.exoplatform.kernel</groupId>
       <artifactId>exo.kernel.component.common</artifactId>
       <scope>runtime</scope>
@@ -71,7 +77,7 @@
               <artifactItems>
                 <artifactItem>
                   <groupId>org.exoplatform.platform-ui</groupId>
-                  <artifactId>platform-ui-web-eXoResources</artifactId>
+                  <artifactId>platform-ui-skin</artifactId>
                   <type>war</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
