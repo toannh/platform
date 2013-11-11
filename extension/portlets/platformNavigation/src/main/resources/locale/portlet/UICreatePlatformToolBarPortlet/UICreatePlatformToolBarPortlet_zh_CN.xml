@@ -49,8 +49,8 @@
       <label>
          <Title>Title</Title>
          <Choix>Add New:</Choix>
-         <EndEvent>To</EndEvent>
-         <StartEvent>From</StartEvent>
+         <EndEvent>到</EndEvent>
+         <StartEvent>从</StartEvent>
          <Calendar>Select Calendar</Calendar>
          <all-day>All Day</all-day>
          <defaultCalendarId>Default</defaultCalendarId>
