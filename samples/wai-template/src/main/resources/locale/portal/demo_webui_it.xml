@@ -3,7 +3,7 @@
   <Signin>
     <welcome>Benvenuto</welcome>
     <login>Login</login>
-    <logout>Logout</logout>
+    <logout>Uscire</logout>
     <language>
       <en>Switch to English</en>
       <fr>Switch to French</fr>
