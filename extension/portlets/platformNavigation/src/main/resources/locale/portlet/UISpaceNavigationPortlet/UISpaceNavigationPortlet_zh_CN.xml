@@ -2,7 +2,7 @@
 <bundle>
  <UISpaceNavigationPortlet>
      <label>
-         <Spaces>My Spaces</Spaces>
+         <Spaces>我的空间</Spaces>
          <Join>Join a space</Join>
          <more>More Spaces</more>
          <see>Show</see>

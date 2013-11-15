@@ -5,7 +5,7 @@
          <AddPage>Add Page</AddPage>
          <EditNavigation>Navigation</EditNavigation>
          <Content>Content</Content>
-         <Editor>Edit</Editor>
+         <Editor>编辑</Editor>
          <Page>Page</Page>
          <Site>Site</Site>
          <Layout>Edit Layout</Layout>
@@ -44,7 +44,7 @@
     </label>
  
     <action>
-      <Save>Save</Save>
+      <Save>保存</Save>
       <Cancel>取消</Cancel>
     </action>
     <msg>
