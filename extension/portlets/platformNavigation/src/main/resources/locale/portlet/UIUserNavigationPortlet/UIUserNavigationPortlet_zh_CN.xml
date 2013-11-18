@@ -3,7 +3,7 @@
    <UIUserNavigationPortlet>
       <label>
          <activities>Activities Stream</activities>
-         <profile>Profile</profile>
+         <profile>配置文件</profile>
          <connections>Connections</connections>
          <wiki>wiki</wiki>
          <Myactivities>My Activity Stream</Myactivities>
