@@ -12,7 +12,7 @@
          <siteLayout>布局</siteLayout>
          <ManagePages>管理页面</ManagePages>
          <GroupSite>群组站点</GroupSite>
-         <Properties>SEO</Properties>
+         <Properties>#{UISEOToolbarForm.label.seo}</Properties>
          <AddSite>添加站点</AddSite>
       </action>
 <ManageSites>管理站点</ManageSites>
@@ -62,15 +62,15 @@
   </UISEOForm>
   <UISEOPopupWindow>
   <title>
-      <UISEOForm>SEO 管理</UISEOForm>
+      <UISEOForm>#{UISEOToolbarForm.title.seo}</UISEOForm>
   </title>
   </UISEOPopupWindow>    
   <UISEOToolbarForm>
   <title>
-      <seo>SEO 管理</seo>
+      <seo>搜索引擎优化管理</seo>
   </title>
   <label>
-    <seo>SEO</seo>
+    <seo>搜索引擎优化</seo>
   </label>
   </UISEOToolbarForm>  
   <FloatNumberValidator>
