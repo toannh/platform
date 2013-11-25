@@ -50,7 +50,7 @@
 </label>
 <action>
 <Save>Salvar</Save>
-<Cancel>Cancelar</Cancel>
+<Cancel>#{word.cancel}</Cancel>
 </action>
 </UINavigationForm>
 <Visible>
