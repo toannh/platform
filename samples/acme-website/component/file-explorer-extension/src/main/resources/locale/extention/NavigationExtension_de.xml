@@ -49,7 +49,7 @@
 <Detail>Detaillierte Informationen</Detail>
 </label>
 <action>
-<Save>Speichern</Save>
+<Save>#{word.save}</Save>
 <Cancel>#{word.cancel}</Cancel>
 </action>
 </UINavigationForm>
