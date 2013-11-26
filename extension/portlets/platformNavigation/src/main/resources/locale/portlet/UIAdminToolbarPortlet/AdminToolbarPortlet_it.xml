@@ -45,7 +45,7 @@
  
     <action>
       <Save>Salvare</Save>
-      <Cancel>Annullare</Cancel>
+      <Cancel>Annulla</Cancel>
     </action>
     <msg>
       <repository-exception>Un errore inaspettato! Impossibile salvare i meta dati della pagina.</repository-exception>
