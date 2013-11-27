@@ -45,7 +45,7 @@
  
     <action>
       <Save>Enregistrer</Save>
-      <Cancel>Annuler</Cancel>
+      <Cancel>#{word.cancel}</Cancel>
     </action>
     <msg>
       <repository-exception>Une erreur inattendue est apparue lors de l'enregistrement des métadonnées.</repository-exception>
