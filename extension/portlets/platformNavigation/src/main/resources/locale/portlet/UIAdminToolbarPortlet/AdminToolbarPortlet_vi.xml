@@ -45,7 +45,7 @@
  
     <action>
       <Save>Lưu</Save>
-      <Cancel>Hủy bỏ</Cancel>
+      <Cancel>#{word.cancel}</Cancel>
     </action>
     <msg>
       <repository-exception>Lỗi bất ngờ xảy ra. Không thể lưu trang siêu dữ liệu.</repository-exception>
