@@ -45,7 +45,7 @@
  
     <action>
       <Save>حفظ</Save>
-      <Cancel>الغاء</Cancel>
+      <Cancel>#{word.cancel}</Cancel>
     </action>
     <msg>
       <repository-exception>حدث خطأ غير متوقع. لا يمكن حفظ البيانات الوصفية للصفحة.</repository-exception>
