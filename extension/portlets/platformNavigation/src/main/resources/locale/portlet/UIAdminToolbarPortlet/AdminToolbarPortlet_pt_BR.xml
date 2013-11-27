@@ -45,7 +45,7 @@
  
     <action>
       <Save>Salvar</Save>
-      <Cancel>Cancelar</Cancel>
+      <Cancel>#{word.cancel}</Cancel>
     </action>
     <msg>
       <repository-exception>Ocorreu um erro inesperado. Não é possível salvar os metadados da página.</repository-exception>
