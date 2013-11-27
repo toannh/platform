@@ -45,7 +45,7 @@
  
     <action>
       <Save>Spara</Save>
-      <Cancel>Avbryt</Cancel>
+      <Cancel>#{word.cancel}</Cancel>
     </action>
     <msg>
       <repository-exception>Ett oväntat fel uppstod. Kan inte spara sidan metadata.</repository-exception>
