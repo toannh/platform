@@ -45,7 +45,7 @@
  
     <action>
       <Save>Save</Save>
-      <Cancel>Cancel</Cancel>
+      <Cancel>#{word.cancel}</Cancel>
     </action>
     <msg>
       <repository-exception>An unexpected error occurred. Cannot save page metadata.</repository-exception>
