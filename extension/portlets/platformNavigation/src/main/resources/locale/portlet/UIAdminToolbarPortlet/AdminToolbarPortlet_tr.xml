@@ -44,7 +44,7 @@
     </label>
  
     <action>
-      <Save>Kaydet</Save>
+      <Save>#{word.save}</Save>
       <Cancel>#{word.cancel}</Cancel>
     </action>
     <msg>
