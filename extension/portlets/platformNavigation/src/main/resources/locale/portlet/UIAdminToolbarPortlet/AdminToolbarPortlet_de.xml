@@ -12,7 +12,7 @@
          <siteLayout>Layout</siteLayout>
          <ManagePages>Seiten verwalten</ManagePages>
          <GroupSite>Gruppenseite</GroupSite>
-         <Properties>SEO</Properties>
+         <Properties>#{UISEOToolbarForm.label.seo}</Properties>
          <AddSite>Seite hinzufügen</AddSite>
       </action>
 <ManageSites>Seiten verwalten</ManageSites>
@@ -62,7 +62,7 @@
   </UISEOForm>
   <UISEOPopupWindow>
   <title>
-      <UISEOForm>SEO Management</UISEOForm>
+      <UISEOForm>#{UISEOToolbarForm.title.seo}</UISEOForm>
   </title>
   </UISEOPopupWindow>    
   <UISEOToolbarForm>
@@ -75,7 +75,7 @@
   </UISEOToolbarForm>  
   <FloatNumberValidator>
     <msg>
-      <Invalid-number>Das "Priorität" Feld ist eine ungültige Fliesskommazahl. Gültige Werte reichen von 0.0 bis 1.0.</Invalid-number>
+      <Invalid-number>Das Feld "Priorität" enthält einen ungültigen Wert. Bitte geben Sie eine Zahl zwischen 0,0 und 1,0 ein.</Invalid-number>
     </msg>
   </FloatNumberValidator>
   

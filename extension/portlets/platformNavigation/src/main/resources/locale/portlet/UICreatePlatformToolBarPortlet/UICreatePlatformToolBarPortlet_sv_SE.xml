@@ -19,8 +19,8 @@
          <RequireSelectForum>Välj ett forum.</RequireSelectForum>
       </label>
       <action>
-         <Next>Nästa</Next>
-         <Cancel>Avbryt</Cancel>
+         <Next>#{word.next}</Next>
+         <Cancel>#{word.cancel}</Cancel>
       </action>
    </UICreateList>
    <UICreateTopic>
@@ -47,7 +47,7 @@
    </UICreateWiki>
    <UICreateEvent>
       <label>
-         <Title>Titel</Title>
+         <Title>#{word.title}</Title>
          <Choix>Lägg till ny:</Choix>
          <EndEvent>Till</EndEvent>
          <StartEvent>Från</StartEvent>
@@ -68,8 +68,8 @@
          <add-unsuccessfully>{0} lades inte till.</add-unsuccessfully>
       </msg>
       <action>
-         <Next>Nästa</Next>
-         <Cancel>Avbryt</Cancel>
+         <Next>#{word.save}</Next>
+         <Cancel>#{word.cancel}</Cancel>
       </action>
    </UICreateEvent>
     <UIUploadFile>

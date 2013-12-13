@@ -17,6 +17,10 @@
 		<Locale lang="de" messages="locale/de.xml"/>
 		<Locale lang="pt" messages="locale/pt_BR.xml"/>
 		<Locale lang="it" messages="locale/it.xml"/>
+		<Locale lang="ru" messages="locale/ru.xml" />
+		<Locale lang="tr" messages="locale/tr.xml" />
+		<Locale lang="zh_CN" messages="locale/zh_CN.xml" />
+		<Locale lang="fi" messages="locale/fi.xml" />
 	</ModulePrefs>
     <Content type="html" view="default, home, profile">
         <![CDATA[
@@ -34,7 +38,7 @@
 			<div id="uiFeaturePoll" class="uiGadgetThemes uiBox">
 			  <h6 class="gadgetTitle title left clearfix">
 				__MSG_title__
-				<a class="actionIcon pull-right settingBt" id="tooltipSetting" ref="tooltip" data-placement="left" data-original-title="Setting" onclick=""><i class="uiIconSetting"></i></a>
+				<a class="actionIcon pull-right settingBt" id="tooltipSetting" data-toggle="tooltip" data-placement="left" data-original-title="Setting" onclick=""><i class="uiIconSetting"></i></a>
 			  </h6>
 			  <!-- Display poll  -->
 			  <div class="gadContent">

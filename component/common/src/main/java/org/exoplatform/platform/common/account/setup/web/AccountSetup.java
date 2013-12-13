@@ -24,9 +24,10 @@ import java.net.URLEncoder;
  * @date 3/1/13
  */
 public class AccountSetup extends HttpServlet {
+
+    private static final Log logger = ExoLogger.getLogger(AccountSetup.class);
     private static final long serialVersionUID = 6467955354840693802L;
     public final static String ACCOUNT_SETUP_NODE = "accountSetup";
-    private static Log logger = ExoLogger.getLogger(AccountSetup.class);
     private final static String USER_NAME_ACCOUNT = "username";
     private final static String FIRST_NAME_ACCOUNT = "firstNameAccount";
     private final static String LAST_NAME_ACCOUNT = "lastNameAccount";
@@ -41,8 +42,18 @@ public class AccountSetup extends HttpServlet {
     private final static String MEMBERSHIP_TYPE_MANAGER = "*";
     private final static String INTRANET_HOME = "/portal/intranet";     //A verifier
     private final static String INITIAL_URI_PARAM = "initialURI";
+    private final static String ACCOUNT_SETUP_BUTTON = "setupbutton";
+    private final static String SETUP_SKIP_BUTTON = "skipform";
+    public static Boolean SETUP_SKIP = false;
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String redirectURI = null;
+        String accountsetupbutton = request.getParameter(ACCOUNT_SETUP_BUTTON);
+        if(accountsetupbutton.equals(SETUP_SKIP_BUTTON)){
+            SETUP_SKIP = true;
+            redirectURI = "/" + PortalContainer.getCurrentPortalContainerName();
+            } else {
         EntityEncoder encoder = EntityEncoder.FULL;
         String userNameAccount = request.getParameter(USER_NAME_ACCOUNT);
         String firstNameAccount = request.getParameter(FIRST_NAME_ACCOUNT);
@@ -129,7 +140,8 @@ public class AccountSetup extends HttpServlet {
             RequestLifeCycle.end();
         }
         // Redirect to requested page
-        String redirectURI = "/" + PortalContainer.getCurrentPortalContainerName() + "/login?" + "username=" + URLEncoder.encode(userNameAccount, "UTF-8") + "&password=" + userPasswordAccount + "&initialURI=" + INTRANET_HOME;
+        redirectURI = "/" + PortalContainer.getCurrentPortalContainerName() + "/login?" + "username=" + URLEncoder.encode(userNameAccount, "UTF-8") + "&password=" + userPasswordAccount + "&initialURI=" + INTRANET_HOME;
+        }
         response.setCharacterEncoding("UTF-8");
         response.sendRedirect(redirectURI);
         }

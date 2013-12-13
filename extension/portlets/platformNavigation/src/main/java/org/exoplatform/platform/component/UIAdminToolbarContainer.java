@@ -19,8 +19,6 @@
 
 package org.exoplatform.platform.component;
 
-import java.util.List;
-
 import org.exoplatform.platform.webui.NavigationURLUtils;
 import org.exoplatform.platform.webui.navigation.TreeNode;
 import org.exoplatform.platform.webui.navigation.UINavigationManagement;
@@ -43,10 +41,8 @@ import org.exoplatform.social.core.space.spi.SpaceService;
 import org.exoplatform.wcm.webui.Utils;
 import org.exoplatform.wcm.webui.seo.UISEOToolbarForm;
 import org.exoplatform.web.application.ApplicationMessage;
-//import org.exoplatform.webos.webui.page.UIDesktopPage;
 import org.exoplatform.webui.application.WebuiApplication;
 import org.exoplatform.webui.application.WebuiRequestContext;
-import org.exoplatform.webui.application.portlet.PortletRequestContext;
 import org.exoplatform.webui.config.annotation.ComponentConfig;
 import org.exoplatform.webui.config.annotation.ComponentConfigs;
 import org.exoplatform.webui.config.annotation.EventConfig;
@@ -58,6 +54,10 @@ import org.exoplatform.webui.core.lifecycle.UIFormLifecycle;
 import org.exoplatform.webui.event.Event;
 import org.exoplatform.webui.event.Event.Phase;
 import org.exoplatform.webui.event.EventListener;
+
+import java.util.List;
+
+//import org.exoplatform.webos.webui.page.UIDesktopPage;
 
 @ComponentConfigs({
     @ComponentConfig(template = "app:/groovy/platformNavigation/portlet/UIAdminToolbarPortlet/UIAdminToolbarContainer.gtmpl", events = {
@@ -210,11 +210,12 @@ public class UIAdminToolbarContainer extends UIPortletApplication {
       Boolean quickEdit = (Boolean) context.getRequest().getSession().getAttribute(Utils.TURN_ON_QUICK_EDIT);
       if (quickEdit == null || !quickEdit) {
         context.getRequest().getSession().setAttribute(Utils.TURN_ON_QUICK_EDIT, true);
-        Utils.updatePortal((PortletRequestContext) event.getRequestContext());
+        //Utils.updatePortal((PortletRequestContext) event.getRequestContext());         
       } else {
         context.getRequest().getSession().setAttribute(Utils.TURN_ON_QUICK_EDIT, false);
-        Utils.updatePortal((PortletRequestContext) event.getRequestContext());
+        //Utils.updatePortal((PortletRequestContext) event.getRequestContext());
       }
+      event.getRequestContext().getJavascriptManager().getRequireJS().addScripts("location.reload(true);");
     }
   }
 

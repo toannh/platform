@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+ <UISpaceNavigationPortlet>
+     <label>
+         <Spaces>Alanlarım</Spaces>
+         <Join>Bir alana katılın</Join>
+         <more>Daha fazla Alan</more>
+         <see>Göster</see>
+     </label>
+     <msg>
+         <filter-spaces>Alanlarda Ara</filter-spaces>
+         <no-space>Alan bulunamadı</no-space>
+     </msg>
+
+</UISpaceNavigationPortlet>
+</bundle>

@@ -12,7 +12,7 @@
          <siteLayout>Bố cục</siteLayout>
          <ManagePages>Quản lý Trang</ManagePages>
          <GroupSite>Nhóm Site</GroupSite>
-         <Properties>SEO</Properties>
+         <Properties>#{UISEOToolbarForm.label.seo}</Properties>
          <AddSite>Tạo Site</AddSite>
       </action>
 <ManageSites>Quản lý Site</ManageSites>
@@ -62,7 +62,7 @@
   </UISEOForm>
   <UISEOPopupWindow>
   <title>
-      <UISEOForm>Quản lý SEO</UISEOForm>
+      <UISEOForm>#{UISEOToolbarForm.title.seo}</UISEOForm>
   </title>
   </UISEOPopupWindow>    
   <UISEOToolbarForm>
@@ -75,7 +75,7 @@
   </UISEOToolbarForm>  
   <FloatNumberValidator>
     <msg>
-      <Invalid-number>Trường ưu tiên là một số không hợp lệ. Giá trị hợp lệ khoảng từ 0.0 đến 1.0.</Invalid-number>
+      <Invalid-number>Trường ưu tiên có giá trị không hợp lệ. Hãy nhập một số trong khoảng từ 0.0 đến 1.0.</Invalid-number>
     </msg>
   </FloatNumberValidator>
   
