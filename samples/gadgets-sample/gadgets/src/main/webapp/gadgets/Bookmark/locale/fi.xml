@@ -31,5 +31,5 @@
   <msg name="edit">Edit</msg>
   <msg name="cancel">Cancel</msg>
   <msg name="emptyBookmarkPre">You don't have any bookmark : add them by clicking on</msg>
-  <msg name="emptyBookmarkSuf">button</msg>
+  <msg name="addBookmark">Add Bookmark</msg>
 </messagebundle>
