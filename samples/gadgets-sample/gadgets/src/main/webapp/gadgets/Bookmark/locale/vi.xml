@@ -31,5 +31,5 @@
   <msg name="edit">Chỉnh sửa</msg>
   <msg name="cancel">Hủy bỏ</msg>
   <msg name="emptyBookmarkPre">Bạn không có đánh dấu trang nào. Thêm vào bằng cách nhấp</msg>
-  <msg name="emptyBookmarkSuf">nút</msg>
+  <msg name="addBookmark">Add Bookmark</msg>
 </messagebundle>
