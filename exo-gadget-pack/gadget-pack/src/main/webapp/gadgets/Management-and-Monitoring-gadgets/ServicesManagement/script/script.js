@@ -315,7 +315,7 @@ ServicesManagement.prototype.showMinimessage = function(jsonMessage) {
     $(this.parentNode).attr("style", "vertical-align: top");
     $(this).html("");
   });
-  $(".mmlib_table .uiGrid").each(function() {
+  $(".mmlib_table .uiTable").each(function() {
     $(this.parentNode).attr("style", "vertical-align: top");
   });
   
@@ -336,7 +336,7 @@ ServicesManagement.prototype.objToTable = function(obj) {
     return "empty object";
   }
 
-  var str = "<table cellspacing='0' class='uiGrid table table-hover table-striped'>";
+  var str = "<table cellspacing='0' class='uiTable uiTableHover uiTableStriped'>";
   if (obj.constructor == Array) {
     for ( var i = 0; i < obj.length; i++) {
    

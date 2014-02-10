@@ -12,7 +12,7 @@
 	import java.net.URLEncoder;
 %>
 <div id="$uicomponent.id" class="uiTreeList">
-  <table class="uiGrid table table-hover table-striped">
+  <table class="uiTable uiTableHover uiTableStriped">
 	  
 	  <thead>
 	    <tr>

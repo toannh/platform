@@ -710,7 +710,7 @@
 	            <input class="searchUser" id="searchTxt" type="text" placeholder="Search user" name="titleInput">
 	            <div id="lastLoginsContainerDiv">
 	              <div id="lastLoginsDataDiv">
-	                <table id="lastLoginsTable" class="uiGrid table table-hover table-striped">
+	                <table id="lastLoginsTable" class="uiTable uiTableHover uiTableStriped">
 	                <thead>
 	                <tr>
 	                  <th>User <i class="uiIcon_ pull-right"></i></th>

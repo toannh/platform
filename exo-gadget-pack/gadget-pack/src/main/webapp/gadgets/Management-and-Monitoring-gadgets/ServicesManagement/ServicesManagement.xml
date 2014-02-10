@@ -85,7 +85,7 @@
               </div>
             
               <div class="GadgetGrid">
-                <table cellspacing="0" class="uiGrid table table-hover table-striped">
+                <table cellspacing="0" class="uiTable uiTableHover uiTableStriped">
                     <thead>
                         <tr>
                             <th class="TableHeader FieldComponent Text">__MSG_name__</th>
@@ -124,7 +124,7 @@
                 </div>
               </div>
               <div class="GadgetGrid">
-                <table cellspacing="0" class="uiGrid table table-hover table-striped">
+                <table cellspacing="0" class="uiTable uiTableHover uiTableStriped">
                     <thead>
                         <tr>
                             <th class="FieldComponent">__MSG_name__</th>
@@ -184,7 +184,7 @@
                 <div id="PropertiesTab" class="Tab">Properties</div>
             </div>
             <div id="ServiceMethods" class="GadgetGrid GadgetGmCanvasMessage ContentSelected">
-                <table cellspacing="0" class="uiGrid table table-hover table-striped">
+                <table cellspacing="0" class="uiTable uiTableHover uiTableStriped">
                     <thead>
                         <tr>
                             <th class="FieldComponent">__MSG_name__</th>
@@ -200,7 +200,7 @@
             </div>
             
             <div id="ServiceProperties" class="GadgetGrid GadgetGmCanvasMessage">
-                 <table cellspacing="0" class="uiGrid table table-hover table-striped">
+                 <table cellspacing="0" class="uiTable uiTableHover uiTableStriped">
                     <thead>
                        <tr>
                           <th class="FieldComponent">__MSG_name__</th>
