@@ -18,6 +18,8 @@
     <Locale lang="tr" messages="locale/tr.xml"/>
     <Locale lang="zh_CN" messages="locale/zh_CN.xml"/>
     <Locale lang="fi" messages="locale/fi.xml"/>
+    <Locale lang="lt" messages="locale/lt.xml"/>
+    <Locale lang="no" messages="locale/no.xml"/>
 </ModulePrefs>
 <Content type="html">
 <![CDATA[ 
@@ -27,7 +29,7 @@
   <link rel="stylesheet" type="text/css" href="/eXoResources/skin/bootstrap/css/bootstrap.css" />    
   <link rel="stylesheet" type="text/css" href="/eXoResources/skin/css/Core.css" />
   <link type="text/css" rel="stylesheet" href="/exo-gadget-resources/skin/exo-gadget/gadget-common.css" />
-  <link type="text/css" rel="stylesheet" href="/gadget-pack/skin/css/suggestion.css" />
+  <link type="text/css" rel="stylesheet" href="/eXoSkin/skin/css/platform/portlets/gadget-pack/suggestion.css" />
   <script language="javascript" type="text/javascript" src="/exo-gadget-resources/script/jquery/1.6.2/jquery.min.js"></script>
   <script language="javascript" type="text/javascript" src="scripts/suggestion.js"></script>
   <script type="text/javascript">   

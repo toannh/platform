@@ -20,13 +20,15 @@
     <Locale lang="tr" messages="locale/tr.xml"/>
     <Locale lang="zh_CN" messages="locale/zh_CN.xml"/>
     <Locale lang="fi" messages="locale/fi.xml"/>
+    <Locale lang="lt" messages="locale/lt.xml"/>
+    <Locale lang="no" messages="locale/no.xml"/>
   </ModulePrefs>
   <Content type="html">
     <![CDATA[     
     <head>
       <title>Memory</title>
       <link rel="stylesheet" type="text/css" href="/exo-gadget-resources/skin/exo-gadget/gadget-common.css" />
-      <link type="text/css" rel="stylesheet" href="/gadget-pack/skin/css/monitoring.css" />
+      <link type="text/css" rel="stylesheet" href="/eXoSkin/skin/css/platform/portlets/gadget-pack/monitoring.css" />
       <link rel="stylesheet" type="text/css" href="/exo-gadget-resources/script/jquery/plugins/jqplot/1.0.0/jquery.jqplot.min.css" />
       <link rel="stylesheet" type="text/css" href="/eXoSkin/skin/bootstrap/css/bootstrap.css" />
     

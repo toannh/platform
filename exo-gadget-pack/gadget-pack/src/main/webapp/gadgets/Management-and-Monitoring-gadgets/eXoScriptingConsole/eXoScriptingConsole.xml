@@ -14,9 +14,9 @@
 <Content type="html">
 <![CDATA[   
   <head>
-    <link href="/gadget-pack/skin/css/scriptConsoleColorpicker.css" rel="stylesheet" type="text/css" />   
-    <link href="/gadget-pack/skin/css/scriptConsoleStyle.css" rel="stylesheet" type="text/css" />    
-    <link href="/gadget-pack/skin/css/scriptConsoleTerminal.css" rel="stylesheet" type="text/css" />
+    <link href="/eXoSkin/skin/css/platform/portlets/gadget-pack/scriptConsoleColorpicker.css" rel="stylesheet" type="text/css" />
+    <link href="/eXoSkin/skin/css/platform/portlets/gadget-pack/scriptConsoleStyle.css" rel="stylesheet" type="text/css" />
+    <link href="/eXoSkin/skin/css/platform/portlets/gadget-pack/scriptConsoleTerminal.css" rel="stylesheet" type="text/css" />
     
     <script type="text/javascript" src="script/jquery-1.5.min.js"></script>
     <script type="text/javascript" src="script/jquery.terminal-0.3.3.min.js"></script>    
