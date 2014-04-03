@@ -475,6 +475,11 @@
 				<div id="UIPortalLoginFormAction" class="loginButton">
 					<button class="button" tabindex="4"  onclick="login();"><%=res.getString("portal.login.Signin")%></button>
 				</div>
+<script type="text/javascript">
+  var _jipt = [];
+  _jipt.push(['project', 'exo-platform']);
+</script>
+<script type="text/javascript" src="//cdn.crowdin.net/jipt/jipt.js"></script>
 
                 <script type='text/javascript'>
 
