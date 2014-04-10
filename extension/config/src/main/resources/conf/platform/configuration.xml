@@ -129,6 +129,9 @@
                   <string>social-extension</string>
                </value>
                <value profiles="all">
+                  <string>social-notification-extension</string>
+               </value>
+               <value profiles="all">
                   <string>social-resources</string>
                </value>
                <value profiles="all">
@@ -136,6 +139,9 @@
                </value>
                <value profiles="all">
                   <string>social-portlet</string>
+               </value>
+               <value profiles="all">
+                  <string>social-juzu</string>
                </value>
 
                <!-- Knowledge -->
@@ -178,6 +184,9 @@
                </value>
                <value>
                   <string>unified-search</string>
+               </value>
+               <value>
+                  <string>platform-notification</string>
                </value>
             </collection>
           </field>
