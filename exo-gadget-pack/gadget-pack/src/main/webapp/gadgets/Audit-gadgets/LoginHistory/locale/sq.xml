@@ -47,4 +47,5 @@
   <msg name="loginHistory.unknow">crwdns6429242:0crwdne6429242:0</msg>
   <msg name="loginHistory.next">crwdns6429243:0crwdne6429243:0</msg>
   <msg name="loginHistory.ago">crwdns6429244:0crwdne6429244:0</msg>
+  <msg name="loginHistory.search_user">Search user</msg>
 </messagebundle>
