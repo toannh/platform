@@ -21,9 +21,9 @@
 -->
 <messagebundle>
   <msg name="title_memory">crwdns6429262:0crwdne6429262:0</msg>
-  <msg name="used">Used</msg>
-  <msg name="free">Free</msg>
-  <msg name="total">Total</msg>
-  <msg name="heap">Heap memory</msg>
-  <msg name="non-heap">Non-heap memory</msg>
+  <msg name="used">crwdns6796213:0crwdne6796213:0</msg>
+  <msg name="free">crwdns6796214:0crwdne6796214:0</msg>
+  <msg name="total">crwdns6796215:0crwdne6796215:0</msg>
+  <msg name="heap">crwdns6796216:0crwdne6796216:0</msg>
+  <msg name="non-heap">crwdns6796217:0crwdne6796217:0</msg>
 </messagebundle>
