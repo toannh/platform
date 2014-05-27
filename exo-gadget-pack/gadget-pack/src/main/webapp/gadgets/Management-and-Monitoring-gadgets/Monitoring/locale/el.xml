@@ -21,9 +21,9 @@
 -->
 <messagebundle>
   <msg name="title_memory">Μνήμη</msg>
-  <msg name="used">Used</msg>
-  <msg name="free">Free</msg>
-  <msg name="total">Total</msg>
-  <msg name="heap">Heap memory</msg>
-  <msg name="non-heap">Non-heap memory</msg>
+  <msg name="used">Χρησιμοποιούνται</msg>
+  <msg name="free">Ελεύθερα</msg>
+  <msg name="total">Σύνολο</msg>
+  <msg name="heap">Μνήμη σωρού</msg>
+  <msg name="non-heap">Μνήμη εκτός σωρού</msg>
 </messagebundle>
