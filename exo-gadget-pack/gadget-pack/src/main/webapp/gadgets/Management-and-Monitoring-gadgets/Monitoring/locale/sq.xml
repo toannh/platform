@@ -26,14 +26,14 @@
   <msg name="total">crwdns6796215:0crwdne6796215:0</msg>
   <msg name="heap">crwdns6796216:0crwdne6796216:0</msg>
   <msg name="non-heap">crwdns6796217:0crwdne6796217:0</msg>
-  <msg name="loading">Loading data ...</msg>
-  <msg name="title_caches">Cache Levels</msg>
-  <msg name="consumption">Consumption</msg>
-  <msg name="hit_ratio">Hit ratio</msg>
-  <msg name="details">Details</msg>
-  <msg name="hit">Hit</msg>
-  <msg name="miss">Miss</msg>
-  <msg name="full">full</msg>
-  <msg name="max_size">Max size</msg>
-  <msg name="time_to_live">Time to live</msg>
+  <msg name="loading">crwdns6796265:0crwdne6796265:0</msg>
+  <msg name="title_caches">crwdns6796266:0crwdne6796266:0</msg>
+  <msg name="consumption">crwdns6796267:0crwdne6796267:0</msg>
+  <msg name="hit_ratio">crwdns6796268:0crwdne6796268:0</msg>
+  <msg name="details">crwdns6796269:0crwdne6796269:0</msg>
+  <msg name="hit">crwdns6796270:0crwdne6796270:0</msg>
+  <msg name="miss">crwdns6796271:0crwdne6796271:0</msg>
+  <msg name="full">crwdns6796272:0crwdne6796272:0</msg>
+  <msg name="max_size">crwdns6796273:0crwdne6796273:0</msg>
+  <msg name="time_to_live">crwdns6796274:0crwdne6796274:0</msg>
 </messagebundle>
