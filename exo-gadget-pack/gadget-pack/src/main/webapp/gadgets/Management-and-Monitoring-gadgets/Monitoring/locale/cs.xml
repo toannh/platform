@@ -29,7 +29,7 @@
   <msg name="loading">Nahrávám data ...</msg>
   <msg name="title_caches">Úrovně cache</msg>
   <msg name="consumption">Spotřeba</msg>
-  <msg name="hit_ratio">Hit ratio</msg>
+  <msg name="hit_ratio">Poměr přístupů</msg>
   <msg name="details">Podrobnosti</msg>
   <msg name="hit">Hit</msg>
   <msg name="miss">Miss</msg>
