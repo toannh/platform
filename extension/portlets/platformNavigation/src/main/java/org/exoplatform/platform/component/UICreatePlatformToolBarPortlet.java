@@ -16,6 +16,8 @@ import org.exoplatform.webui.core.UIPopupContainer;
 import org.exoplatform.webui.core.UIPortletApplication;
 import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
 
+import java.util.HashMap;
+
 /**
  * @author <a href="rtouzi@exoplatform.com">rtouzi</a>
  * @date 01/11/12
@@ -26,60 +28,63 @@ import org.exoplatform.webui.core.lifecycle.UIApplicationLifecycle;
 )
 public class UICreatePlatformToolBarPortlet extends UIPortletApplication {
 
-    private static final Log LOG = ExoLogger.getLogger(UICreatePlatformToolBarPortlet.class);
-    private String renderedCompId_;
-    private SpaceService spaceService = null;
-    private String currentPortalName = null;
-    private boolean socialPortal = false;
+  private static final Log LOG = ExoLogger.getLogger(UICreatePlatformToolBarPortlet.class);
+  private String renderedCompId_;
+  private SpaceService spaceService = null;
+  private String currentPortalName = null;
+  private boolean socialPortal = false;
 
-    public UICreatePlatformToolBarPortlet() throws Exception {
-        try {
-            spaceService = getApplicationComponent(SpaceService.class);
-        } catch (Exception exception) {
-            LOG.error("paceService could be 'null' when the Social profile isn't activated ", exception);
-        }
-        if (spaceService == null) { // Social profile disabled
-            return;
-        }
-
-        addChild(UICreateList.class, null, null);
-        addChild(UIPopupContainer.class, null, "CreatePortletPopUPContainer");
-
+  public UICreatePlatformToolBarPortlet() throws Exception {
+    try {
+      spaceService = getApplicationComponent(SpaceService.class);
+    } catch (Exception exception) {
+      LOG.error("paceService could be 'null' when the Social profile isn't activated ", exception);
+    }
+    if (spaceService == null) { // Social profile disabled
+      return;
     }
 
+    addChild(UICreateList.class, null, null);
+    addChild(UIPopupContainer.class, null, "CreatePortletPopUPContainer");
 
-    public String getRenderedId(Class T, UICreatePlatformToolBarPortlet uiParent) {
-        return uiParent.getChild(T).getId();
+  }
+
+
+  public String getRenderedId(Class T, UICreatePlatformToolBarPortlet uiParent) {
+    return uiParent.getChild(T).getId();
+  }
+
+  public boolean isSocialPortal() {
+    if (currentPortalName != null && getCurrentPortalName().equals(currentPortalName)) {
+      return socialPortal;
     }
-
-    public boolean isSocialPortal() {
-        if (currentPortalName != null && getCurrentPortalName().equals(currentPortalName)) {
-            return socialPortal;
-        }
-        if (!isSocialProfileActivated()) {
-            socialPortal = false;
-        } else {
-            currentPortalName = getCurrentPortalName();
-            UserPortal userPortal = getUserPortal();
-            UserNavigation userNavigation = userPortal.getNavigation(SiteKey.portal(currentPortalName));
-            UserNode portalNode = userPortal.getNode(userNavigation, Scope.CHILDREN, null, null);
-            socialPortal = portalNode.getChild("spaces") != null;
-        }
-        return socialPortal;
+    if (!isSocialProfileActivated()) {
+      socialPortal = false;
+    } else {
+      currentPortalName = getCurrentPortalName();
+      UserPortal userPortal = getUserPortal();
+      UserNavigation userNavigation = userPortal.getNavigation(SiteKey.portal(currentPortalName));
+      UserNode portalNode = userPortal.getNode(userNavigation, Scope.CHILDREN, null, null);
+      socialPortal = portalNode.getChild("spaces") != null;
     }
+    return socialPortal;
+  }
 
-    public boolean isSocialProfileActivated() {
-        return (ExoContainer.getProfiles().contains("social") || ExoContainer.getProfiles().contains("default") || ExoContainer
-                .getProfiles().contains("all"));
-    }
+  public boolean isSocialProfileActivated() {
+    return (ExoContainer.getProfiles().contains("social") || ExoContainer.getProfiles().contains("default") || ExoContainer
+            .getProfiles().contains("all"));
+  }
 
-    public static UserPortal getUserPortal() {
-        UserPortalConfig portalConfig = Util.getPortalRequestContext().getUserPortalConfig();
-        return portalConfig.getUserPortal();
-    }
+  public static UserPortal getUserPortal() {
+    UserPortalConfig portalConfig = Util.getPortalRequestContext().getUserPortalConfig();
+    return portalConfig.getUserPortal();
+  }
 
-    private String getCurrentPortalName() {
-        return Util.getPortalRequestContext().getPortalOwner();
-    }
+  private String getCurrentPortalName() {
+    return Util.getPortalRequestContext().getPortalOwner();
+  }
 
+  public HashMap<String, Object> getUIExtContext() throws Exception {
+    return new HashMap<String, Object>();
+  }
 }
