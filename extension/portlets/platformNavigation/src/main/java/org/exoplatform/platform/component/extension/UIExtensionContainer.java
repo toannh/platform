@@ -6,7 +6,8 @@ import org.exoplatform.webui.core.UIContainer;
 import java.util.HashMap;
 
 /**
- * Created by toannh on 7/31/14.
+ * Created by toannh on 7/31/14. 
+PLF UI ExtensionContainer
  */
 public class UIExtensionContainer extends UIContainer {
 
