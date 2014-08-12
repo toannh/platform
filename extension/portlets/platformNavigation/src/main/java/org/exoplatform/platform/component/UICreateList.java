@@ -47,7 +47,7 @@ import java.util.List;
                 )
         }
 )
-public class UICreateList extends UIPlatformExtensionContainer {
+public class UICreateList extends UIPlatformExtensionContainer{
 
   private static Log LOG = ExoLogger.getLogger(UICreateList.class);
   static String parStatus;

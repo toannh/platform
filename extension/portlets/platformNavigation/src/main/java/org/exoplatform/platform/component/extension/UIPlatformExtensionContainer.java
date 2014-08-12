@@ -34,6 +34,7 @@ import java.util.List;
  * exo@exoplatform.com
  * July 31, 2014
  */
+
 public abstract class UIPlatformExtensionContainer extends UIExtensionContainer {
 
   protected int extensionSize;
