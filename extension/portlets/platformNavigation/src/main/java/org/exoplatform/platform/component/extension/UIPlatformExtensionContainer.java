@@ -18,6 +18,7 @@
 package org.exoplatform.platform.component.extension;
 
 import org.exoplatform.platform.component.UICreatePlatformToolBarPortlet;
+import org.exoplatform.portal.webui.container.UIContainer;
 import org.exoplatform.services.log.ExoLogger;
 import org.exoplatform.services.log.Log;
 import org.exoplatform.webui.application.WebuiRequestContext;
@@ -35,9 +36,10 @@ import java.util.List;
  * July 31, 2014
  */
 
-public abstract class UIPlatformExtensionContainer extends UIExtensionContainer {
+public abstract class UIPlatformExtensionContainer extends UIContainer {
 
   protected int extensionSize;
+  private HashMap<String, Object> extContext = null;
 
   protected static final Log log = ExoLogger.getLogger(UIPlatformExtensionContainer.class);
 
@@ -77,5 +79,13 @@ public abstract class UIPlatformExtensionContainer extends UIExtensionContainer 
   }
 
   public abstract String getExtensionType();
+
+  protected boolean checkModificationContext(HashMap<String, Object> extContext2) throws Exception {
+    if (!extContext2.equals(extContext)) {
+      extContext = (HashMap<String, Object>) extContext2.clone();
+      return true;
+    }
+    return false;
+  }
 }
 
