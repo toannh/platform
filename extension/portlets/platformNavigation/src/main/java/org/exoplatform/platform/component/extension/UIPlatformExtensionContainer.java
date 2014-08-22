@@ -36,10 +36,10 @@ import java.util.List;
  * July 31, 2014
  */
 
-public abstract class UIPlatformExtensionContainer extends UIContainer {
+public abstract class UIPlatformExtensionContainer extends UIContainer{
 
   protected int extensionSize;
-  private HashMap<String, Object> extContext = null;
+
 
   protected static final Log log = ExoLogger.getLogger(UIPlatformExtensionContainer.class);
 
@@ -48,12 +48,9 @@ public abstract class UIPlatformExtensionContainer extends UIContainer {
     try {
       UICreatePlatformToolBarPortlet uiCreatePlatformToolBarPortlet = getAncestorOfType(UICreatePlatformToolBarPortlet.class);
       HashMap<String, Object> extContext =  uiCreatePlatformToolBarPortlet.getUIExtContext();
-      if (checkModificationContext(extContext)) {
         UIExtensionManager manager = getApplicationComponent(UIExtensionManager.class);
         List<UIExtension> extensions = manager.getUIExtensions(getExtensionType());
-
         extensionSize = 0;
-
 //        Add new children
         if (extensions != null && extensions.size() > 0) {
           // Remove old extension
@@ -68,8 +65,6 @@ public abstract class UIPlatformExtensionContainer extends UIContainer {
             }
           }
         }
-      }
-
       super.processRender(context);
     } catch (Exception e) {
       if (log.isDebugEnabled()) {
@@ -79,13 +74,5 @@ public abstract class UIPlatformExtensionContainer extends UIContainer {
   }
 
   public abstract String getExtensionType();
-
-  protected boolean checkModificationContext(HashMap<String, Object> extContext2) throws Exception {
-    if (!extContext2.equals(extContext)) {
-      extContext = (HashMap<String, Object>) extContext2.clone();
-      return true;
-    }
-    return false;
-  }
 }
 
