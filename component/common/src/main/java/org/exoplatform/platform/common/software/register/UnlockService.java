@@ -1,4 +1,4 @@
-package org.exoplatform.platform.welcomescreens.service;
+package org.exoplatform.platform.common.software.register;
 
 import org.apache.commons.codec.binary.Base64;
 import org.exoplatform.commons.info.MissingProductInformationException;
@@ -68,6 +68,15 @@ public class UnlockService implements Startable {
         String tmpValue = ((ValueParam) params.get("delayPeriod")).getValue();
         delayPeriod = (tmpValue == null || tmpValue.isEmpty()) ? Utils.DEFAULT_DELAY_PERIOD : Integer.parseInt(tmpValue);
         Utils.HOME_CONFIG_FILE_LOCATION = Utils.EXO_HOME_FOLDER + "/" + Utils.PRODUCT_NAME + "/license.xml";
+    }
+
+    public static boolean isRegisted() {
+        try {
+            String registerStatus = Utils.readFromFile(Utils.SW_REG_STATUS, Utils.HOME_CONFIG_FILE_LOCATION);
+            return Boolean.parseBoolean(registerStatus);
+        }catch(IllegalArgumentException ex){
+            return false;
+        }
     }
 
     public void start() {
